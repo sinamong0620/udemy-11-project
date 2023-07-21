@@ -1,0 +1,29 @@
+.content_css {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_introduce_message {
+  width: 40em;
+  height: 10em;
+  margin: 10em 0em 2em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-radius: 1em;
+  color: white;
+  background: rgb(56, 56, 56);
+  box-shadow: 0 0 1em black;
+}
+.content_introduce_message h1 {
+  font-weight: 900;
+  font-size: 1.8em;
+}
+.content_menu_array {
+  width: 60%;
+  background: white;
+}
