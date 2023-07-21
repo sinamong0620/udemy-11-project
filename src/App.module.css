@@ -1,0 +1,9 @@
+body {
+  background: rgb(43, 43, 43);
+  background-image: url("/public/meals.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.content_img {
+  width: 100%;
+}
