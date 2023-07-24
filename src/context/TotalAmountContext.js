@@ -8,9 +8,11 @@ const TotalAmountContext = React.createContext({
 export const TotalAmountContextProvider = (props) => {
   const [totalValue, setTotalValue] = useState(0);
 
-  const sumAmountHandler = (event) => {
+  const sumAmountHandler = (number) => {
     // setTotalValue(totalValue + price);
-    // setTotalValue();
+    setTotalValue((prevState) => {
+      return prevState + Number(number.number);
+    });
     console.log(totalValue);
   };
   return (
