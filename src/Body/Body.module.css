@@ -7,7 +7,7 @@
 
 .content_introduce_message {
   width: 40em;
-  height: 10em;
+  height: 16em;
   margin: 10em 0em 2em 0em;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,9 @@
   font-weight: 900;
   font-size: 1.8em;
 }
-.content_menu_array {
+.menu_array {
   width: 60%;
-  background: white;
+  padding: 2em;
+  background-color: white;
+  border-radius: 1em;
 }

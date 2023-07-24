@@ -1,0 +1,45 @@
+.content_menu_array {
+  width: 100%;
+  height: 4em;
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+}
+.content_menu_array_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content_menu_array_info :nth-child(2) {
+  font-weight: 400;
+  font-style: italic;
+}
+.content_menu_array_info :last-child {
+  font-size: 1.2em;
+  color: rgb(190, 144, 44);
+}
+button {
+  font-weight: 800;
+  width: 6.5em;
+  height: 2.2em;
+  background: rgb(77, 14, 3);
+  border: none;
+  border-radius: 1em;
+  color: white;
+  float: right;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+hr {
+  border: 0.001em solid lightgray;
+}
+label {
+  margin-right: 0.5em;
+}
+input {
+  width: 2.5em;
+  border: gray 0.001em solid;
+  border-radius: 0.2em;
+}

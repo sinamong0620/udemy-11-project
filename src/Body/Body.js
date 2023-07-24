@@ -1,4 +1,28 @@
 import styles from "./Body.module.css";
+import Menu from "../Menu/Menu";
+const food_info = [
+  {
+    foodName: "Sushi",
+    countryOfOrigin: "Finest fist and veggies",
+    price: 22.99,
+  },
+  {
+    foodName: "Schnitzel",
+    countryOfOrigin: "A german specialty!",
+    price: 16.5,
+  },
+  {
+    foodName: "Barbecue Burger",
+    countryOfOrigin: "American, raw, meaty",
+    price: 12.99,
+  },
+  {
+    foodName: "Green Bowl",
+    countryOfOrigin: "Healthy...and green...",
+    price: 18.99,
+  },
+];
+
 const Body = () => {
   return (
     <div className={styles.content_css}>
@@ -14,7 +38,16 @@ const Body = () => {
         </div>
       </div>
 
-      <div className={styles.content_menu_array}>\</div>
+      <div className={styles.menu_array}>
+        {food_info.map((props) => (
+          <Menu
+            key={Math.random()}
+            foodName={props.foodName}
+            countryOfOrigin={props.countryOfOrigin}
+            price={props.price}
+          />
+        ))}
+      </div>
     </div>
   );
 };
