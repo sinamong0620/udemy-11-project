@@ -10,7 +10,7 @@ const Header = (props) => {
       <span>ReactMeals</span>
       <div className={styles.header_style_your_cart}>
         <img src="/shopping-cart.png" alt="cartlogo" />
-        <div>Your Cart</div>
+        <div onClick={props.onModalhanlder}>Your Cart</div>
         <div className={styles.header_style_your_cart_item_total}>
           {menuCtx.totalValue}
         </div>

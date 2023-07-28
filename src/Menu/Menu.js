@@ -14,7 +14,6 @@ const Menu = (props) => {
   });
   const amountCountHandler = (e) => {
     menuAmountDispatch({ type: "USER_INPUT", number: e.target.value });
-    console.log(menuAmount);
   };
   const submitHandler = (e) => {
     e.preventDefault(); //새로고침 막기
