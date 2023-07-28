@@ -1,0 +1,63 @@
+.ModalContainer {
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ModalYourCartContainer {
+  width: 39em;
+  min-height: 10em;
+  padding: 1em;
+  background-color: white;
+  border-radius: 1em;
+}
+.ModalYourCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+}
+.ModalMyProduct {
+  display: flex;
+}
+.ModalMyProductPrice {
+  display: flex;
+}
+.ModalMyProductCount {
+  align-self: end;
+}
+.ModalMyProjuctCountButton {
+  width: 4em;
+  margin-left: 1em;
+  border: 0.1em solid #994020;
+  background-color: white;
+  border-radius: 0.5em;
+  color: #994020;
+}
+.ModalHrLine {
+  border-color: #994020;
+}
+
+.ModalTotalContainer {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.4em;
+  font-weight: 800;
+}
+
+.ModalCloseButton {
+  border: 1px solid #994020;
+  background-color: white;
+  color: #994020;
+  margin-left: 1em;
+}
