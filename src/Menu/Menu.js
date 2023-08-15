@@ -2,7 +2,7 @@ import React, { useReducer, useContext } from "react";
 import styles from "./Menu.module.css";
 import TotalAmountContext from "../context/TotalAmountContext";
 
-const menureducer = (state, action) => {
+const menureducer = (action) => {
   if (action.type === "USER_INPUT") {
     return { number: action.number };
   }
@@ -17,7 +17,7 @@ const Menu = (props) => {
   };
   const submitHandler = (e) => {
     e.preventDefault(); //새로고침 막기
-    menuCtx.onSumAmount(menuAmount);
+    menuCtx.onSumAmount(props.foodName, props.price, menuAmount);
   };
 
   return (
