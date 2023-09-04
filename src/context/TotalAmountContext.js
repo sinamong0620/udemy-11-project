@@ -1,27 +1,10 @@
 import React, { useState } from "react";
 
 const TotalAmountContext = React.createContext({
-  count: 0,
-  onSumAmount: (amount) => {},
+  items: [], //아이템 목록 관리
+  totalAmount: 0,
+  addItem: (amount) => {}, //목록 추가 함수
+  removeItem: (id) => {}, //목록 제거 함수
 });
-
-export const TotalAmountContextProvider = (props) => {
-  const [totalValue, setTotalValue] = useState(0);
-
-  const sumAmountHandler = (name, price, number) => {
-    // setTotalValue(totalValue + price);
-    setTotalValue((prevState) => {
-      return prevState + Number(number.number);
-    });
-    console.log(totalValue);
-  };
-  return (
-    <TotalAmountContext.Provider
-      value={{ totalValue: totalValue, onSumAmount: sumAmountHandler }}
-    >
-      {props.children}
-    </TotalAmountContext.Provider>
-  );
-};
 
 export default TotalAmountContext;

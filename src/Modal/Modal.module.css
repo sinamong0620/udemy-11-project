@@ -16,14 +16,7 @@
   background-color: white;
   border-radius: 1em;
 }
-.ModalYourCart {
-  display: flex;
-  justify-content: space-between;
-  align-items: self-end;
-}
-.ModalMyProduct {
-  display: flex;
-}
+
 .ModalMyProductName {
   margin-bottom: 0.4em;
   font-size: 1.3em;
@@ -57,7 +50,7 @@
   color: white;
 }
 .ModalHrLine {
-  border-color: #994020;
+  border: none;
 }
 
 .ModalTotalContainer {
